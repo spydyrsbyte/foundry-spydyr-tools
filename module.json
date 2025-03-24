@@ -14,31 +14,9 @@
     }
   ],
   "scripts": [
-    "maneuver.js",
 	"macro-button.js"
   ],
-  "relationships": {
-    "systems": [
-      {
-        "id": "pf1",
-        "type": "system",
-        "compatibility": {}
-      }
-    ]
-  },
-  "packs": [
-    {
-      "name": "pow-maneuvers",
-      "label": "PoW Maneuvers",
-      "path": "packs/pow-maneuvers",
-      "type": "Item",
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      },
-      "system": "pf1"
-    }
-  ],
+
   "download": "https://github.com/spydyrsbyte/foundry-spydyr-tools/archive/refs/heads/main.zip",
   "manifest":"https://raw.githubusercontent.com/spydyrsbyte/foundry-spydyr-tools/refs/heads/main/module.json"	
 }
