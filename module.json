@@ -14,7 +14,8 @@
     }
   ],
   "scripts": [
-	"macro-button.js"
+	"macro-button.js",
+	"whitelist.js"
   ],
 
   "download": "https://github.com/spydyrsbyte/foundry-spydyr-tools/archive/refs/heads/main.zip",
