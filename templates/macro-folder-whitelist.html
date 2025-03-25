@@ -1,0 +1,32 @@
+<form>
+  <div class="form-group">
+    <label>Select Macro Folder to Add</label>
+    <div style="display: flex; gap: 0.5em; align-items: center;">
+      <select name="folder-select">
+        {{#each allFolders}}
+          <option value="{{this.name}}">{{this.name}}</option>
+        {{/each}}
+      </select>
+      <button type="button" class="add-folder-select">
+        <i class="fas fa-plus"></i> Add
+      </button>
+      <button type="button" class="toggle-wildcard">
+        <i class="fas fa-asterisk"></i> Allow All (*)
+      </button>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label>Whitelisted Macro Folders</label>
+    <div id="folder-list">
+      {{#each folders as |folder idx|}}
+        <div class="form-group">
+          <input type="text" name="{{idx}}" value="{{folder}}" readonly />
+          {{#unless (eq folder "*")}}
+            <button type="button" class="remove-folder">Remove</button>
+          {{/unless}}
+        </div>
+      {{/each}}
+    </div>
+  </div>
+</form>
