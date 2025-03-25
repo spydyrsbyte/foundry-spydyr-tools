@@ -1,3 +1,8 @@
+function isFolderWhitelisted(folderName) {
+  const whitelist = game.settings.get("spydyr-tools", "macroFolderWhitelist");
+  return whitelist.includes("*") || whitelist.includes(folderName);
+}
+
 function macro_run (event){
     const element = event.target;
     const macroName = $(element).attr('data-macro');
