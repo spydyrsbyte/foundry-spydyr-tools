@@ -2,7 +2,7 @@
   "id": "spydyr_tools",
   "title": "Spydyr Tools",
   "description"	: "A set of tools that I need.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "compatibility": {
     "minimum": "11",
     "verified": "12"
